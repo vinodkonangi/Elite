@@ -1,5 +1,5 @@
 function bindData(data) {
-    let resultValue = document.getElementById('txtResult').value;
+    let resultValue = document.getElementById('txtResult').value;;
 
     if (data === 'delete') {
         let newValue = resultValue.substring(0, resultValue.length - 1);
