@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="calc.js"></script>
+</head>
+
+<body>
+  <div class="container bg-primary py-2 my-2">
+    <div class="row">
+      <div class="col-12">
+        <input class="form-control" id="txtResult" name="txtResult" type="text" placeholder="0" />
+      </div>
+    </div>
+
+    <div class="row my-2">
+      <div class="col-3">
+        <button type="button" name="btnDelete" id="btnDelete" title="Delete" onclick="bindData('delete')"
+          class="btn btn-secondary form-control form-control">
+          <i class="bi bi-backspace-fill"></i>
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btnAC" name="btnAC" title="AC" class="btn btn-secondary form-control"
+          onclick="clearResult()">
+          AC
+        </button>
+      </div>
+      <div class="col-3">
+        <button id="btnModulus" name="btnModulus" title="Modulo" type="button" class="btn btn-secondary form-control"
+          onclick="bindData('%')">
+          <i class="bi bi-percent"></i>
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btnDiv" name="btndiv" title="Division" class="btn btn-secondary form-control"
+          onclick="bindData('/')">
+          /
+        </button>
+      </div>
+    </div>
+
+    <div class="row  my-2">
+      <div class="col-3">
+        <button type="button" name="btn7" id="btn7" title="7" class="btn btn-secondary form-control"
+          onclick="bindData('7')">
+          7
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btn8" name="btn8" title="8" onclick="bindData('8')"
+          class="btn btn-secondary form-control">
+          8
+        </button>
+      </div>
+      <div class="col-3">
+        <button id="btn9" name="btn9" title="9" type="button" class="btn btn-secondary form-control"
+          onclick="bindData('9')">
+          9
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btnMultiplication" name="btnMultiplication" title="Multiplication"
+          class="btn btn-secondary form-control" onclick="bindData('*')">
+          *
+        </button>
+      </div>
+    </div>
+
+    <div class="row  my-2">
+      <div class="col-3">
+        <button type="button" name="btn4" id="btn4" title="4" class="btn btn-secondary form-control"
+          onclick="bindData('4')">
+          4
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btn5" name="btn5" title="5" class="btn btn-secondary form-control"
+          onclick="bindData('5')">
+          5
+        </button>
+      </div>
+      <div class="col-3">
+        <button id="btn6" name="btn6" title="6" type="button" class="btn btn-secondary form-control"
+          onclick="bindData('6')">
+          6
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btnSub" name="btnSub" title="Sub" class="btn btn-secondary form-control"
+          onclick="bindData('-')">
+          -
+        </button>
+      </div>
+    </div>
+
+    <div class="row  my-2">
+      <div class="col-3">
+        <button type="button" name="btn1" id="btn1" title="1" class="btn btn-secondary form-control"
+          onclick="bindData('1')">
+          1
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btn2" name="btn2" title="2" class="btn btn-secondary form-control"
+          onclick="bindData('2')">
+          2
+        </button>
+      </div>
+      <div class="col-3">
+        <button id="btn3" name="btn3" title="3" type="button" class="btn btn-secondary form-control"
+          onclick="bindData('3')">
+          3
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="btnAdd" name="btnAdd" title="Add" class="btn btn-secondary form-control"
+          onclick="bindData('+')">
+          +
+        </button>
+      </div>
+    </div>
+
+
+    <div class="row  my-2">
+      <div class="col-6">
+        <button type="button" name="btn0" id="btn0" title="0" class="btn btn-secondary form-control"
+          onclick="bindData('0')">
+          0
+        </button>
+      </div>
+      <div class="col-3">
+        <button id="btnDot" name="btnDot" title="." type="button" class="btn btn-secondary form-control"
+          onclick="bindData('.')">
+          .
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" id="BtnEquals" name="BtnEquals" title="Equals" class="btn btn-secondary form-control"
+          onclick="Equals()">
+          =
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
